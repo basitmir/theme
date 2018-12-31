@@ -12,14 +12,15 @@
 	<link rel="icon" href="imgs/favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="fontawesome/css/font-awesome-animation.min.css">
 	<link rel="stylesheet" href="fontawesome/css/animate.css">
-
+<link rel="stylesheet" href="css/fakeLoader.css">
+ 
 
   
   </head>
     <body>
-
+     <div class="myloader"></div>
     <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark wow slideInDown">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark wow slideInDown navbarEdit">
   <a class="navbar-brand faa-pulse animated" href="#"><img src="imgs/logo.png"  alt=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -321,7 +322,37 @@
   </a>
 </div>
 
+<div class="count">
+	 <div class="container">
+	     <div class="row ">
+	                <div class="col-md-12">
+	                     <h1> OUR WORK SO FAR..</h1><br>
+	                 </div>
+	     </div>
+	           <div class="row">
+	                    <div class="col-md-3">
 
+											 <i class="fas fa-users"></i>
+                        <blockquote class="blockquote"> <h3> <span class="counter">12345</span><br>Satisfied Clients</h3>
+												</blockquote>
+			  </div>
+			         <div class="col-md-3 line">
+							 <i class="fas fa-star"></i>
+							               <h3> <span class="counter">12345</span><br>Completed Projects</h3>
+		          	</div>
+		                	<div class="col-md-3 line">
+											<i class="fas fa-hands-helping"></i>
+											         <h3> <span class="counter">12345</span><br>Meetings Held</h3>
+			                </div>
+		                        	<div class="col-md-3 line">
+															<i class="fas fa-hourglass-half"></i>
+															    <h3><span class="counter">12345</span><br>Hours of work</h3>
+		                           	</div>
+																 
+	 
+	 </div>
+	 
+	 </div></div>
 
    
 	
@@ -331,6 +362,9 @@
    
 	 <div class="footer wow pulse"  class="parallax-window" data-parallax="scroll" data-image-src="imgs/new4.jpg">
 	 <div class= "row upper-footer justify-content-center">
+
+
+	 
 	    <div class="col-sm-3 mr-5 text-center">
 			<a href="#"><img src="imgs/logo.png"  alt=""></a>
 			<p>We are a young company always looking for new and creative ideas to
@@ -371,10 +405,25 @@
 	 </div>
 	 
 	 </div>
+	 
+
+
+
 
 	 <!-- base -->
 	 <div class="base">
+	 
 	    <div class="container">
+			    <div class="upperFooter">
+					      <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+					
+					</div>
+			
 	    © Bootstrap Footer Template by Basit Mir
 	    
 
@@ -387,16 +436,43 @@
 	   </div>
 	 </div>
 
-	  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	 <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/fakeLoader.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/parallax.min.js"></script>
 	<script src="js/wow.min.js"></script>
-	
+<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/script.js"></script>
 
 
-    <script src="js/script.js"></script>
 
+
+    <!-- <script src="js/script.js"></script> -->
+<script type="text/javascript">
+
+$(".myloader").fakeLoader({
+
+// Time in milliseconds for fakeLoader disappear
+timeToHide:1200, 
+
+// 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+spinner:"spinner5",//Options: 
+
+// Background color. Hex, RGB or RGBA colors
+ bgColor:"#a3a375",
+// backgroundImage:"imgs/logo.png"
+// Custom loading GIF.
+// imagePath:"imgs/logo.png" 
+            
+});
+
+</script>
 </body>
 
     </html>
